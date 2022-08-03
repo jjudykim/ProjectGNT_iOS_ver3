@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		783150C6289ADE69008EA60F /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 783150BF289ADE68008EA60F /* Pretendard-Medium.otf */; };
+		783150CA289ADE69008EA60F /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 783150C3289ADE69008EA60F /* Pretendard-Regular.otf */; };
 		78BF6E5D289ABA4200D41D5F /* GmarketSansTTFMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78BF6E5A289ABA4200D41D5F /* GmarketSansTTFMedium.ttf */; };
 		78BF6E5E289ABA4200D41D5F /* GmarketSansTTFLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78BF6E5B289ABA4200D41D5F /* GmarketSansTTFLight.ttf */; };
 		78BF6E5F289ABA4200D41D5F /* GmarketSansTTFBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78BF6E5C289ABA4200D41D5F /* GmarketSansTTFBold.ttf */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		783150BF289ADE68008EA60F /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		783150C3289ADE69008EA60F /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		78BF6E5A289ABA4200D41D5F /* GmarketSansTTFMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFMedium.ttf; sourceTree = "<group>"; };
 		78BF6E5B289ABA4200D41D5F /* GmarketSansTTFLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFLight.ttf; sourceTree = "<group>"; };
 		78BF6E5C289ABA4200D41D5F /* GmarketSansTTFBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFBold.ttf; sourceTree = "<group>"; };
@@ -46,6 +50,8 @@
 		78BF6E59289AB9F600D41D5F /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				783150BF289ADE68008EA60F /* Pretendard-Medium.otf */,
+				783150C3289ADE69008EA60F /* Pretendard-Regular.otf */,
 				78BF6E5C289ABA4200D41D5F /* GmarketSansTTFBold.ttf */,
 				78BF6E5B289ABA4200D41D5F /* GmarketSansTTFLight.ttf */,
 				78BF6E5A289ABA4200D41D5F /* GmarketSansTTFMedium.ttf */,
@@ -143,8 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				78E658B9289AB0D9000DA815 /* LaunchScreen.storyboard in Resources */,
+				783150CA289ADE69008EA60F /* Pretendard-Regular.otf in Resources */,
 				78BF6E5E289ABA4200D41D5F /* GmarketSansTTFLight.ttf in Resources */,
 				78E658B6289AB0D9000DA815 /* Assets.xcassets in Resources */,
+				783150C6289ADE69008EA60F /* Pretendard-Medium.otf in Resources */,
 				78E658B4289AB0D8000DA815 /* Main.storyboard in Resources */,
 				78BF6E5D289ABA4200D41D5F /* GmarketSansTTFMedium.ttf in Resources */,
 				78BF6E5F289ABA4200D41D5F /* GmarketSansTTFBold.ttf in Resources */,
