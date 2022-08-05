@@ -17,7 +17,7 @@
         <!--LoginVC-->
         <scene sceneID="5sZ-pT-qt3">
             <objects>
-                <viewController storyboardIdentifier="LoginVC" title="LoginVC" id="gHX-ZB-R1l" customClass="ViewController" customModule="ProjectGNT_iOS_ver3" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" title="LoginVC" id="gHX-ZB-R1l" customClass="LoginViewController" customModule="ProjectGNT_iOS_ver3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LZv-JB-VWH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,11 +51,17 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="button_kakao_login" title=""/>
+                                <connections>
+                                    <action selector="LoginForKakao:" destination="gHX-ZB-R1l" eventType="touchUpInside" id="MHk-5u-dOI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88H-pa-tMY">
                                 <rect key="frame" x="104" y="557" width="210" height="59"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="button_apple_login" title=""/>
+                                <connections>
+                                    <action selector="LoginForApple:" destination="gHX-ZB-R1l" eventType="touchUpInside" id="4hF-LJ-ots"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T28-EZ-3aE">
                                 <rect key="frame" x="158" y="160" width="98" height="165"/>

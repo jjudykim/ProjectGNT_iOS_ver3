@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     @IBOutlet var mainIcon_ImageView: UIImageView!
     
@@ -16,6 +16,14 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         mainIcon_ImageView.image = #imageLiteral(resourceName: "MainIcon")
     }
+    
+    @IBAction func LoginForKakao(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func LoginForApple(_ sender: UIButton) {
+    }
+    
 }
 
 
