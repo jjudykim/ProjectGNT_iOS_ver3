@@ -51,6 +51,7 @@ class SignUpViewController: UIViewController {
         dropDown.selectionAction = { [unowned self] (index: Int, item: String) in
             localInput_TF.text = item
             localInput_TF.textColor = UIColor.darkGray
+            localSelect_Btn.setImage(UIImage(systemName: "arrowtriangle.down.fill"), for: .normal)
             self.dropDown.clearSelection()
         }
         dropDown.cancelAction = { [weak self] in
