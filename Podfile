@@ -19,5 +19,6 @@ target 'ProjectGNT_iOS_ver3' do
 pod 'DropDown'
 pod 'KakaoSDKAuth'
 pod 'KakaoSDKUser'
+pod 'LGSegmentedControl'
 
 end

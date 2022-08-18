@@ -1,23 +1,15 @@
 //
-//  RoundButton.swift
+//  RoundSegmentedControl.swift
 //  ProjectGNT_iOS_ver3
 //
-//  Created by jjudy on 2022/08/15.
+//  Created by jjudy on 2022/08/19.
 //
 
 import UIKit
 
 @IBDesignable
-class RoundButton: UIButton {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-    */
-
+class RoundSegmentedControl : UISegmentedControl {
+    
     @IBInspectable var cornerRadius: CGFloat = 0{
         didSet{
         self.layer.cornerRadius = cornerRadius
@@ -35,5 +27,4 @@ class RoundButton: UIButton {
             self.layer.borderColor = borderColor.cgColor
         }
     }
-    
 }

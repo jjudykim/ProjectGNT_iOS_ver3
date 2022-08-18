@@ -34,7 +34,7 @@ class LoginViewController: UIViewController {
                     // 기존 사용자가 아닐 경우 회원가입 화면으로 이동
                     guard let signUpVC = self.storyboard?.instantiateViewController(withIdentifier: "signUpVCID") as? SignUpViewController else { return }
                     // 화면 전환 애니메이션 설정
-                    signUpVC.modalTransitionStyle = .coverVertical
+                    signUpVC.modalTransitionStyle = .crossDissolve
                     // 전환된 화면이 보여지는 방법 설정 (fullScreen)
                     signUpVC.modalPresentationStyle = .fullScreen
                     self.present(signUpVC, animated: true, completion: nil)

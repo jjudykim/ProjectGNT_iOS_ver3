@@ -51,12 +51,17 @@
 		78BF6E5D289ABA4200D41D5F /* GmarketSansTTFMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78BF6E5A289ABA4200D41D5F /* GmarketSansTTFMedium.ttf */; };
 		78BF6E5E289ABA4200D41D5F /* GmarketSansTTFLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78BF6E5B289ABA4200D41D5F /* GmarketSansTTFLight.ttf */; };
 		78BF6E5F289ABA4200D41D5F /* GmarketSansTTFBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78BF6E5C289ABA4200D41D5F /* GmarketSansTTFBold.ttf */; };
+		78CC00A228AE8E6F00FB865F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC00A128AE8E6F00FB865F /* MainViewController.swift */; };
 		78E658AD289AB0D8000DA815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E658AC289AB0D8000DA815 /* AppDelegate.swift */; };
 		78E658AF289AB0D8000DA815 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E658AE289AB0D8000DA815 /* SceneDelegate.swift */; };
 		78E658B1289AB0D8000DA815 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E658B0289AB0D8000DA815 /* LoginViewController.swift */; };
 		78E658B4289AB0D8000DA815 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78E658B2289AB0D8000DA815 /* Main.storyboard */; };
 		78E658B6289AB0D9000DA815 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78E658B5289AB0D9000DA815 /* Assets.xcassets */; };
 		78E658B9289AB0D9000DA815 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78E658B7289AB0D9000DA815 /* LaunchScreen.storyboard */; };
+		78F5B08C28AEB8CB00230F58 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5B08B28AEB8CB00230F58 /* CustomTabBarController.swift */; };
+		78F5B08E28AEBFFA00230F58 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5B08D28AEBFFA00230F58 /* SearchViewController.swift */; };
+		78F5B09028AEC2A800230F58 /* RankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5B08F28AEC2A800230F58 /* RankingViewController.swift */; };
+		78F5B09228AEC34600230F58 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F5B09128AEC34600230F58 /* MyPageViewController.swift */; };
 		FC55577E16A958C0204DB676 /* Pods_ProjectGNT_iOS_ver3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66B0682DAFA7F15B60865C43 /* Pods_ProjectGNT_iOS_ver3.framework */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +121,7 @@
 		78BF6E5A289ABA4200D41D5F /* GmarketSansTTFMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFMedium.ttf; sourceTree = "<group>"; };
 		78BF6E5B289ABA4200D41D5F /* GmarketSansTTFLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFLight.ttf; sourceTree = "<group>"; };
 		78BF6E5C289ABA4200D41D5F /* GmarketSansTTFBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFBold.ttf; sourceTree = "<group>"; };
+		78CC00A128AE8E6F00FB865F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		78E658A9289AB0D8000DA815 /* ProjectGNT_iOS_ver3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectGNT_iOS_ver3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E658AC289AB0D8000DA815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78E658AE289AB0D8000DA815 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +130,10 @@
 		78E658B5289AB0D9000DA815 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78E658B8289AB0D9000DA815 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78E658BA289AB0D9000DA815 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78F5B08B28AEB8CB00230F58 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		78F5B08D28AEBFFA00230F58 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		78F5B08F28AEC2A800230F58 /* RankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingViewController.swift; sourceTree = "<group>"; };
+		78F5B09128AEC34600230F58 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		C2D8A8A21A351BFF67390787 /* Pods-ProjectGNT_iOS_ver3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectGNT_iOS_ver3.release.xcconfig"; path = "Target Support Files/Pods-ProjectGNT_iOS_ver3/Pods-ProjectGNT_iOS_ver3.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -261,10 +271,15 @@
 				78E658AC289AB0D8000DA815 /* AppDelegate.swift */,
 				78E658AE289AB0D8000DA815 /* SceneDelegate.swift */,
 				78E658B0289AB0D8000DA815 /* LoginViewController.swift */,
+				78F5B08B28AEB8CB00230F58 /* CustomTabBarController.swift */,
 				783150E328AD2CD4008EA60F /* SignUpViewController.swift */,
+				78CC00A128AE8E6F00FB865F /* MainViewController.swift */,
+				78F5B08D28AEBFFA00230F58 /* SearchViewController.swift */,
 				7886AC4528AD6F8000E12025 /* KakaoMapViewController.swift */,
 				78B459D828AD4AF900721283 /* RoundButton.swift */,
 				78E658B2289AB0D8000DA815 /* Main.storyboard */,
+				78F5B09128AEC34600230F58 /* MyPageViewController.swift */,
+				78F5B08F28AEC2A800230F58 /* RankingViewController.swift */,
 				78E658B5289AB0D9000DA815 /* Assets.xcassets */,
 				78E658B7289AB0D9000DA815 /* LaunchScreen.storyboard */,
 				78E658BA289AB0D9000DA815 /* Info.plist */,
@@ -429,8 +444,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78CC00A228AE8E6F00FB865F /* MainViewController.swift in Sources */,
 				78E658B1289AB0D8000DA815 /* LoginViewController.swift in Sources */,
+				78F5B08C28AEB8CB00230F58 /* CustomTabBarController.swift in Sources */,
+				78F5B08E28AEBFFA00230F58 /* SearchViewController.swift in Sources */,
 				7886AC4628AD6F8000E12025 /* KakaoMapViewController.swift in Sources */,
+				78F5B09028AEC2A800230F58 /* RankingViewController.swift in Sources */,
+				78F5B09228AEC34600230F58 /* MyPageViewController.swift in Sources */,
 				78B459D928AD4AF900721283 /* RoundButton.swift in Sources */,
 				78E658AD289AB0D8000DA815 /* AppDelegate.swift in Sources */,
 				783150E428AD2CD4008EA60F /* SignUpViewController.swift in Sources */,

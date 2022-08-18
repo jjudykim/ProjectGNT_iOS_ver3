@@ -1,0 +1,51 @@
+//
+//  MainViewController.swift
+//  ProjectGNT_iOS_ver3
+//
+//  Created by jjudy on 2022/08/19.
+//
+
+import UIKit
+import LGSegmentedControl
+
+class MainViewController: UIViewController, UIScrollViewDelegate {
+    @IBOutlet var select_SC: LGSegmentedControl!
+    @IBOutlet var rankInfo_SV: UIScrollView!
+    @IBOutlet var rankInfo_PC: UIPageControl!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        rankInfo_SV.delegate = self
+        addContentScrollView()
+        setPageControl()
+    }
+    
+    @IBAction func selectSegmentedControl(_ sender: LGSegmentedControl) {
+        
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let value = scrollView.contentOffset.x/scrollView.frame.size.width
+        setPageControlSelectedPage(currentPage: Int(round(value)))
+    }
+    
+    private func addContentScrollView() {
+        for i in 0..<3 {
+            let imageView = UIImageView()
+            let xPos = self.view.frame.width * CGFloat(i)
+            imageView.frame = CGRect(x: xPos, y: 0, width: rankInfo_SV.bounds.width, height: rankInfo_SV.bounds.height)
+            imageView.image = #imageLiteral(resourceName: "rankInfo_sub")
+            rankInfo_SV.addSubview(imageView)
+            rankInfo_SV.contentSize.width = imageView.frame.width * CGFloat(i + 1)
+        }
+    }
+    
+    private func setPageControl() {
+        rankInfo_PC.numberOfPages = 3
+    }
+    
+    private func setPageControlSelectedPage(currentPage:Int) {
+        rankInfo_PC.currentPage = currentPage
+    }
+}

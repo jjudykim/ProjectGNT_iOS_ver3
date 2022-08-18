@@ -67,6 +67,7 @@
                                 <buttonConfiguration key="configuration" style="plain" image="button_apple_login" title=""/>
                                 <connections>
                                     <action selector="LoginForApple:" destination="gHX-ZB-R1l" eventType="touchUpInside" id="4hF-LJ-ots"/>
+                                    <segue destination="LAV-u2-Afa" kind="show" id="Na4-e9-IgL"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T28-EZ-3aE">
@@ -129,17 +130,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5gk-9e-pC2">
-                                <rect key="frame" x="158" y="74" width="98" height="162"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainIcon" translatesAutoresizingMaskIntoConstraints="NO" id="5gk-9e-pC2">
+                                <rect key="frame" x="158" y="74" width="98" height="177"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="소환사명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3q-Tb-6tK">
-                                <rect key="frame" x="56" y="272" width="128" height="20"/>
+                                <rect key="frame" x="56" y="272" width="128" height="35"/>
                                 <fontDescription key="fontDescription" name="GmarketSansTTFMedium" family="Gmarket Sans TTF" pointSize="20"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="소환사명을 입력해주세요" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WqT-Qg-DRy">
-                                <rect key="frame" x="56" y="317" width="300" height="37"/>
+                                <rect key="frame" x="56" y="332" width="300" height="22"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Pretendard-Light" family="Pretendard" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" textContentType="name"/>
@@ -238,6 +239,24 @@
                                 <fontDescription key="fontDescription" name="Pretendard-Light" family="Pretendard" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Tz-cG-Cvt" customClass="RoundButton" customModule="ProjectGNT_iOS_ver3" customModuleProvider="target">
+                                <rect key="frame" x="57" y="743" width="300" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Pretendard-Medium" family="Pretendard" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="회원가입">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VJi-cp-r6U"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -296,7 +315,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YAc-aZ-h3l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3324.6376811594205" y="849.77678571428567"/>
+            <point key="canvasLocation" x="4132" y="84"/>
         </scene>
         <!--KakaoMapVC-->
         <scene sceneID="31m-V3-ITk">
@@ -312,10 +331,188 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pJM-us-axh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4060.8695652173915" y="849.77678571428567"/>
+            <point key="canvasLocation" x="4954" y="84"/>
+        </scene>
+        <!--MainVC-->
+        <scene sceneID="uMI-Yl-vRz">
+            <objects>
+                <viewController title="MainVC" modalPresentationStyle="fullScreen" id="509-f8-BWJ" customClass="MainViewController" customModule="ProjectGNT_iOS_ver3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k6X-wy-EwD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectSegment_background" translatesAutoresizingMaskIntoConstraints="NO" id="xk7-Z5-NF0">
+                                <rect key="frame" x="38" y="313" width="339" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="339" id="Q47-Hh-RQh"/>
+                                    <constraint firstAttribute="height" constant="109" id="Roo-no-N9Q"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5yh-Ub-GOi" customClass="LGSegmentedControl" customModule="LGSegmentedControl">
+                                <rect key="frame" x="82" y="345" width="250" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="initialSelectedIndex">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="stackViewDistribution" value="fillEqually"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="segmentTitles" value="그님티, 지역, 소속"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="segmentsCornerRadius">
+                                        <real key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animateStateChange" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="deselectedBackgroundColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="deselectedTextColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="selectSegmentedControl:" destination="509-f8-BWJ" eventType="valueChanged" id="GhV-VF-2jR"/>
+                                </connections>
+                            </view>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gic-T5-rJW">
+                                <rect key="frame" x="149" y="690" width="116" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" indicatorStyle="white" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLE-sF-A7G">
+                                <rect key="frame" x="38" y="458" width="339" height="271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="tLC-ZF-bsP"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ki6-3o-tr5"/>
+                            </scrollView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Gv0-NA-bBd">
+                                <rect key="frame" x="70" y="108" width="105" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="UiK-DS-iHn"/>
+                                    <constraint firstAttribute="width" constant="105" id="zMu-aZ-CAz"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainText" translatesAutoresizingMaskIntoConstraints="NO" id="BTe-lR-zXb">
+                                <rect key="frame" x="183" y="88" width="161" height="165"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wec-eS-dv0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xk7-Z5-NF0" firstAttribute="top" secondItem="BTe-lR-zXb" secondAttribute="bottom" constant="60" id="5yB-q8-nYl"/>
+                            <constraint firstItem="wec-eS-dv0" firstAttribute="trailing" secondItem="BTe-lR-zXb" secondAttribute="trailing" constant="70" id="8L8-MG-KXv"/>
+                            <constraint firstItem="BTe-lR-zXb" firstAttribute="leading" secondItem="Gv0-NA-bBd" secondAttribute="trailing" constant="8" id="90i-LK-YSx"/>
+                            <constraint firstItem="BTe-lR-zXb" firstAttribute="top" secondItem="wec-eS-dv0" secondAttribute="top" id="P1P-Wk-Dc9"/>
+                            <constraint firstItem="Gv0-NA-bBd" firstAttribute="leading" secondItem="wec-eS-dv0" secondAttribute="leading" constant="70" id="gMX-fB-mdZ"/>
+                            <constraint firstItem="BTe-lR-zXb" firstAttribute="leading" secondItem="Gv0-NA-bBd" secondAttribute="trailing" constant="8" id="iC9-xc-mo4"/>
+                            <constraint firstItem="Gv0-NA-bBd" firstAttribute="top" secondItem="wec-eS-dv0" secondAttribute="top" constant="20" id="mDv-xL-p2I"/>
+                            <constraint firstItem="wec-eS-dv0" firstAttribute="trailing" secondItem="xk7-Z5-NF0" secondAttribute="trailing" constant="37" id="s6A-XP-nPP"/>
+                            <constraint firstItem="xk7-Z5-NF0" firstAttribute="top" secondItem="Gv0-NA-bBd" secondAttribute="bottom" constant="80" id="scS-mi-fTp"/>
+                            <constraint firstItem="xk7-Z5-NF0" firstAttribute="top" secondItem="BTe-lR-zXb" secondAttribute="bottom" constant="60" id="t3H-an-nIk"/>
+                            <constraint firstItem="xk7-Z5-NF0" firstAttribute="leading" secondItem="wec-eS-dv0" secondAttribute="leading" constant="38" id="tlB-oc-lAA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="홈" image="tabBarIcon_Home" id="n0h-iM-CV8"/>
+                    <navigationItem key="navigationItem" id="Xv0-pe-3i0"/>
+                    <connections>
+                        <outlet property="rankInfo_PC" destination="gic-T5-rJW" id="jMp-no-O63"/>
+                        <outlet property="rankInfo_SV" destination="mLE-sF-A7G" id="ISK-h3-al6"/>
+                        <outlet property="select_SC" destination="5yh-Ub-GOi" id="SH1-yb-dVU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r23-Fc-Heo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2253.6231884057975" y="1602.4553571428571"/>
+        </scene>
+        <!--SearchVC-->
+        <scene sceneID="laD-iN-ARy">
+            <objects>
+                <viewController title="SearchVC" id="apt-hA-WPr" customClass="SearchViewController" customModule="ProjectGNT_iOS_ver3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DNs-jv-YkA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="B1d-1I-KYa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="1" title="검색" image="tabBarIcon_search" id="8m9-KG-BCI"/>
+                    <navigationItem key="navigationItem" id="HNi-UI-GbS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ksx-Ad-0ZN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2970" y="1603"/>
+        </scene>
+        <!--RankingVC-->
+        <scene sceneID="Hdp-hN-Kf4">
+            <objects>
+                <viewController title="RankingVC" id="Y2H-mi-idt" customClass="RankingViewController" customModule="ProjectGNT_iOS_ver3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X79-c2-HZU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="tvb-ov-WbL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="2" title="랭킹" image="tabBarIcon_rank" id="dAM-mu-IVm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kTR-4V-4vh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3699" y="1603"/>
+        </scene>
+        <!--MyPageVC-->
+        <scene sceneID="rcD-Lv-iZc">
+            <objects>
+                <viewController title="MyPageVC" id="84d-as-WqU" customClass="MyPageViewController" customModule="ProjectGNT_iOS_ver3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="77x-zh-W9a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="eJe-rJ-ekw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="3" title="마이페이지" image="tabBarIcon_user" id="SlR-YE-T1M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q6o-i3-q5g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4436" y="1603"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2ln-bb-gYE">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="LAV-u2-Afa" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="kGL-SE-Sme"/>
+                    <splitViewMasterSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="tabBar_background" selectionIndicatorImage="tabBar_selected" id="Wmw-vx-XG2">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="509-f8-BWJ" kind="relationship" relationship="viewControllers" id="Eqj-LN-Tna"/>
+                        <segue destination="apt-hA-WPr" kind="relationship" relationship="viewControllers" id="P9F-Lc-6ez"/>
+                        <segue destination="Y2H-mi-idt" kind="relationship" relationship="viewControllers" id="EbU-RY-Ibp"/>
+                        <segue destination="84d-as-WqU" kind="relationship" relationship="viewControllers" id="ooK-xw-YpR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1me-Pp-a5g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3324.6376811594205" y="829.6875"/>
         </scene>
     </scenes>
     <designables>
+        <designable name="8Tz-cG-Cvt">
+            <size key="intrinsicContentSize" width="70" height="36"/>
+        </designable>
         <designable name="T3f-ao-jPl">
             <size key="intrinsicContentSize" width="52" height="30"/>
         </designable>
@@ -324,9 +521,18 @@
         </designable>
     </designables>
     <resources>
+        <image name="MainIcon" width="1440" height="2400"/>
+        <image name="MainText" width="1228" height="1028"/>
         <image name="arrowtriangle.down.fill" catalog="system" width="128" height="124"/>
         <image name="button_apple_login" width="183" height="45"/>
         <image name="button_kakao_login" width="183" height="45"/>
+        <image name="selectSegment_background" width="4580" height="1336"/>
+        <image name="tabBarIcon_Home" width="20" height="20"/>
+        <image name="tabBarIcon_rank" width="22" height="20"/>
+        <image name="tabBarIcon_search" width="21" height="20"/>
+        <image name="tabBarIcon_user" width="18" height="20"/>
+        <image name="tabBar_background" width="5760" height="1224"/>
+        <image name="tabBar_selected" width="99" height="83"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

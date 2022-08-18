@@ -12,11 +12,13 @@ PODS:
     - KakaoSDKCommon/Common (= 2.11.1)
   - KakaoSDKUser (2.11.1):
     - KakaoSDKAuth (= 2.11.1)
+  - LGSegmentedControl (1.2.1)
 
 DEPENDENCIES:
   - DropDown
   - KakaoSDKAuth
   - KakaoSDKUser
+  - LGSegmentedControl
 
 SPEC REPOS:
   trunk:
@@ -25,6 +27,7 @@ SPEC REPOS:
     - KakaoSDKAuth
     - KakaoSDKCommon
     - KakaoSDKUser
+    - LGSegmentedControl
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
@@ -32,7 +35,8 @@ SPEC CHECKSUMS:
   KakaoSDKAuth: bb2dfa7be30daa8403c9cfc8001aa6fde7a5b779
   KakaoSDKCommon: 555e1bb46595b842ded01cf7888cc17bbae4e113
   KakaoSDKUser: 08c0a4f40bebdebdf948a9e3d0e44ed5c2754f99
+  LGSegmentedControl: 80b6c522b0f0d98d3abfe15077cccf55a7641fe5
 
-PODFILE CHECKSUM: 22137993ca8d3371c4881f6bba4beecfe7269db3
+PODFILE CHECKSUM: bfc74f72ff15c83bfd2a808da3b2cbc88fa60aba
 
 COCOAPODS: 1.11.3
