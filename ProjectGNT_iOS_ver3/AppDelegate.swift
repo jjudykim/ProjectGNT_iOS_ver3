@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import KakaoSDKAuth
+import KakaoSDKCommon
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,7 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        KakaoSDK.initSDK(appKey: "ea4ff4b54ddc283dccbb035cbec95895")
+        
         return true
+    }
+    
+    // 카카오톡 로그인 관련 - 혹시 모르니 오버로딩으로 잠시 추가
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        if (AuthApi.isKakaoTalkLoginUrl(url)) {
+            return AuthController.handleOpenUrl(url: url)
+        }
+
+        return false
     }
 
     // MARK: UISceneSession Lifecycle
