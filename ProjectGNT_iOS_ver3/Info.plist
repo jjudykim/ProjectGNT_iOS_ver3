@@ -2,8 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>App needs location servers for stuff.</string>
+	<key>KAKAO_APP_KEY</key>
+	<string>ea4ff4b54ddc283dccbb035cbec95895</string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Pretendard-Light.otf</string>
 		<string>Pretendard-Regular.otf</string>
 		<string>Pretendard-Medium.otf</string>
 		<string>GmarketSansTTFMedium.ttf</string>

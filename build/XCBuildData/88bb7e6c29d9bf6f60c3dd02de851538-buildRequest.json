@@ -1,0 +1,49 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98ec1e5d51cce0dda6dc3122e5391d9b39"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e980639937765ddc1c8efc3ab5a9b7b16e3"
+    }
+  ],
+  "containerPath" : "/Users/jjudy/Documents/ProjectGNT_iOS_ver3/Pods/Pods.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/jjudy/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/jjudy/Library/Developer/Xcode/DerivedData/Pods-gtmutghdhbllcxcdglnsyybwseir/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/jjudy/Library/Developer/Xcode/DerivedData/Pods-gtmutghdhbllcxcdglnsyybwseir/Index/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}
