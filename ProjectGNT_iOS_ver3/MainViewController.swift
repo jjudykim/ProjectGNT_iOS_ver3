@@ -15,7 +15,8 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        select_SC.Font = UIFont(name: "GmarketSansTTFMedium", size: 15) ?? UIFont.systemFont(ofSize: 15)
         rankInfo_SV.delegate = self
         addContentScrollView()
         setPageControl()
