@@ -342,15 +342,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectSegment_background" translatesAutoresizingMaskIntoConstraints="NO" id="xk7-Z5-NF0">
-                                <rect key="frame" x="38" y="313" width="339" height="109"/>
+                                <rect key="frame" x="37" y="273" width="340" height="109"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="339" id="Q47-Hh-RQh"/>
+                                    <constraint firstAttribute="width" constant="340" id="Q47-Hh-RQh"/>
                                     <constraint firstAttribute="height" constant="109" id="Roo-no-N9Q"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5yh-Ub-GOi" customClass="LGSegmentedControl" customModule="LGSegmentedControl">
-                                <rect key="frame" x="82" y="345" width="250" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5yh-Ub-GOi" customClass="LGSegmentedControl" customModule="LGSegmentedControl">
+                                <rect key="frame" x="82" y="305" width="250" height="45"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="initialSelectedIndex">
@@ -358,14 +357,14 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="stackViewDistribution" value="fillEqually"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="spacing">
-                                        <real key="value" value="5"/>
+                                        <real key="value" value="100"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="string" keyPath="segmentTitles" value="그님티, 지역, 소속"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="segmentsCornerRadius">
-                                        <real key="value" value="23"/>
+                                        <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="animateStateChange" value="YES"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
@@ -385,16 +384,6 @@
                                     <action selector="selectSegmentedControl:" destination="509-f8-BWJ" eventType="valueChanged" id="GhV-VF-2jR"/>
                                 </connections>
                             </view>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gic-T5-rJW">
-                                <rect key="frame" x="149" y="690" width="116" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </pageControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" indicatorStyle="white" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLE-sF-A7G">
-                                <rect key="frame" x="38" y="458" width="339" height="271"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="tLC-ZF-bsP"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="ki6-3o-tr5"/>
-                            </scrollView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Gv0-NA-bBd">
                                 <rect key="frame" x="70" y="108" width="105" height="125"/>
                                 <constraints>
@@ -405,21 +394,34 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainText" translatesAutoresizingMaskIntoConstraints="NO" id="BTe-lR-zXb">
                                 <rect key="frame" x="183" y="88" width="161" height="165"/>
                             </imageView>
+                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLE-sF-A7G">
+                                <rect key="frame" x="20" y="401" width="374" height="271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="tLC-ZF-bsP"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ki6-3o-tr5"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gic-T5-rJW">
+                                <rect key="frame" x="149" y="680" width="116" height="26"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wec-eS-dv0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="xk7-Z5-NF0" firstAttribute="top" secondItem="BTe-lR-zXb" secondAttribute="bottom" constant="60" id="5yB-q8-nYl"/>
+                            <constraint firstItem="xk7-Z5-NF0" firstAttribute="top" secondItem="BTe-lR-zXb" secondAttribute="bottom" constant="20" id="5yB-q8-nYl"/>
                             <constraint firstItem="wec-eS-dv0" firstAttribute="trailing" secondItem="BTe-lR-zXb" secondAttribute="trailing" constant="70" id="8L8-MG-KXv"/>
                             <constraint firstItem="BTe-lR-zXb" firstAttribute="leading" secondItem="Gv0-NA-bBd" secondAttribute="trailing" constant="8" id="90i-LK-YSx"/>
+                            <constraint firstItem="xk7-Z5-NF0" firstAttribute="centerX" secondItem="k6X-wy-EwD" secondAttribute="centerX" id="9Bt-53-IsI"/>
+                            <constraint firstItem="gic-T5-rJW" firstAttribute="centerX" secondItem="k6X-wy-EwD" secondAttribute="centerX" id="IAa-x8-WZ0"/>
                             <constraint firstItem="BTe-lR-zXb" firstAttribute="top" secondItem="wec-eS-dv0" secondAttribute="top" id="P1P-Wk-Dc9"/>
+                            <constraint firstItem="xk7-Z5-NF0" firstAttribute="centerY" secondItem="5yh-Ub-GOi" secondAttribute="centerY" id="W6m-ep-HKe"/>
                             <constraint firstItem="Gv0-NA-bBd" firstAttribute="leading" secondItem="wec-eS-dv0" secondAttribute="leading" constant="70" id="gMX-fB-mdZ"/>
                             <constraint firstItem="BTe-lR-zXb" firstAttribute="leading" secondItem="Gv0-NA-bBd" secondAttribute="trailing" constant="8" id="iC9-xc-mo4"/>
                             <constraint firstItem="Gv0-NA-bBd" firstAttribute="top" secondItem="wec-eS-dv0" secondAttribute="top" constant="20" id="mDv-xL-p2I"/>
-                            <constraint firstItem="wec-eS-dv0" firstAttribute="trailing" secondItem="xk7-Z5-NF0" secondAttribute="trailing" constant="37" id="s6A-XP-nPP"/>
-                            <constraint firstItem="xk7-Z5-NF0" firstAttribute="top" secondItem="Gv0-NA-bBd" secondAttribute="bottom" constant="80" id="scS-mi-fTp"/>
-                            <constraint firstItem="xk7-Z5-NF0" firstAttribute="top" secondItem="BTe-lR-zXb" secondAttribute="bottom" constant="60" id="t3H-an-nIk"/>
-                            <constraint firstItem="xk7-Z5-NF0" firstAttribute="leading" secondItem="wec-eS-dv0" secondAttribute="leading" constant="38" id="tlB-oc-lAA"/>
+                            <constraint firstItem="wec-eS-dv0" firstAttribute="bottom" secondItem="gic-T5-rJW" secondAttribute="bottom" constant="80" id="o8w-g9-5Wm"/>
+                            <constraint firstItem="xk7-Z5-NF0" firstAttribute="top" secondItem="Gv0-NA-bBd" secondAttribute="bottom" constant="40" id="scS-mi-fTp"/>
+                            <constraint firstItem="xk7-Z5-NF0" firstAttribute="top" secondItem="BTe-lR-zXb" secondAttribute="bottom" constant="20" id="t3H-an-nIk"/>
+                            <constraint firstItem="xk7-Z5-NF0" firstAttribute="centerX" secondItem="5yh-Ub-GOi" secondAttribute="centerX" id="yFc-gG-kCB"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="홈" image="tabBarIcon_Home" id="n0h-iM-CV8"/>

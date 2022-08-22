@@ -26,18 +26,22 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let value = scrollView.contentOffset.x/scrollView.frame.size.width
+        let value = (scrollView.contentOffset.x)/scrollView.frame.size.width
         setPageControlSelectedPage(currentPage: Int(round(value)))
     }
     
     private func addContentScrollView() {
         for i in 0..<3 {
             let imageView = UIImageView()
-            let xPos = self.view.frame.width * CGFloat(i)
-            imageView.frame = CGRect(x: xPos, y: 0, width: rankInfo_SV.bounds.width, height: rankInfo_SV.bounds.height)
-            imageView.image = #imageLiteral(resourceName: "rankInfo_sub")
+            let imageSizeWidth = UIImage(named: "rankInfo_main")!.size.width
+            let imageSizeHeight = UIImage(named: "rankInfo_main")!.size.height
+            let marginOfSV = (self.view.frame.width - rankInfo_SV.frame.width) / 2
+            let xPos = rankInfo_SV.frame.width * CGFloat(i) + (rankInfo_SV.frame.width / 2) - (imageSizeWidth / 2) - marginOfSV
+            imageView.frame = CGRect(x: xPos, y: 0, width: imageSizeWidth, height: imageSizeHeight)
+            imageView.image = UIImage(named: "rankInfo_main")
             rankInfo_SV.addSubview(imageView)
-            rankInfo_SV.contentSize.width = imageView.frame.width * CGFloat(i + 1)
+            rankInfo_SV.contentSize.width = rankInfo_SV.frame.width * CGFloat(i + 1)
+            
         }
     }
     
@@ -47,5 +51,6 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
     
     private func setPageControlSelectedPage(currentPage:Int) {
         rankInfo_PC.currentPage = currentPage
+        print("현재 페이지 : \(currentPage)")
     }
 }
