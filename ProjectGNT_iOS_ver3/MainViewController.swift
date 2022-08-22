@@ -23,7 +23,21 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
     }
     
     @IBAction func selectSegmentedControl(_ sender: LGSegmentedControl) {
-        
+        guard let segment = select_SC.selectedSegment else { return }
+        let selected = segment.title
+        var index: Int
+        switch selected {
+        case "그님티":
+            index = 0
+        case "지역":
+            index = 1
+        case "소속":
+            index = 2
+        default:
+            index = -1
+        }
+        rankInfo_SV.setContentOffset(CGPoint(x: rankInfo_SV.frame.width * CGFloat(index), y: 0), animated: true)
+        setPageControlSelectedPage(currentPage: index)
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
