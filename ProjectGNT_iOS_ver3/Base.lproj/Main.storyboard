@@ -348,8 +348,28 @@
                                     <constraint firstAttribute="height" constant="109" id="Roo-no-N9Q"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5yh-Ub-GOi" customClass="LGSegmentedControl" customModule="LGSegmentedControl">
-                                <rect key="frame" x="82" y="305" width="250" height="45"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gic-T5-rJW">
+                                <rect key="frame" x="149" y="680" width="116" height="26"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Gv0-NA-bBd">
+                                <rect key="frame" x="70" y="108" width="105" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="UiK-DS-iHn"/>
+                                    <constraint firstAttribute="width" constant="105" id="zMu-aZ-CAz"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainText" translatesAutoresizingMaskIntoConstraints="NO" id="BTe-lR-zXb">
+                                <rect key="frame" x="183" y="88" width="161" height="165"/>
+                            </imageView>
+                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLE-sF-A7G">
+                                <rect key="frame" x="20" y="401" width="374" height="271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="tLC-ZF-bsP"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ki6-3o-tr5"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5yh-Ub-GOi" customClass="LGSegmentedControl" customModule="LGSegmentedControl">
+                                <rect key="frame" x="82" y="297" width="250" height="60"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="initialSelectedIndex">
@@ -384,26 +404,6 @@
                                     <action selector="selectSegmentedControl:" destination="509-f8-BWJ" eventType="valueChanged" id="GhV-VF-2jR"/>
                                 </connections>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Gv0-NA-bBd">
-                                <rect key="frame" x="70" y="108" width="105" height="125"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="125" id="UiK-DS-iHn"/>
-                                    <constraint firstAttribute="width" constant="105" id="zMu-aZ-CAz"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MainText" translatesAutoresizingMaskIntoConstraints="NO" id="BTe-lR-zXb">
-                                <rect key="frame" x="183" y="88" width="161" height="165"/>
-                            </imageView>
-                            <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLE-sF-A7G">
-                                <rect key="frame" x="20" y="401" width="374" height="271"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="tLC-ZF-bsP"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="ki6-3o-tr5"/>
-                            </scrollView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gic-T5-rJW">
-                                <rect key="frame" x="149" y="680" width="116" height="26"/>
-                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wec-eS-dv0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
