@@ -35,6 +35,7 @@
 		7810D39828AD9D2300A1EE65 /* daum_th_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 7810D37C28AD9D2300A1EE65 /* daum_th_line.png */; };
 		7810D39928AD9D2300A1EE65 /* map_pin_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 7810D37D28AD9D2300A1EE65 /* map_pin_shadow.png */; };
 		7810D39A28AD9D2300A1EE65 /* DaumMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7810D37E28AD9D2300A1EE65 /* DaumMap.framework */; };
+		781E69C528BAC51B00699791 /* PreviousSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781E69C428BAC51B00699791 /* PreviousSearchTableViewCell.swift */; };
 		783150C6289ADE69008EA60F /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 783150BF289ADE68008EA60F /* Pretendard-Medium.otf */; };
 		783150CA289ADE69008EA60F /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 783150C3289ADE69008EA60F /* Pretendard-Regular.otf */; };
 		783150E428AD2CD4008EA60F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783150E328AD2CD4008EA60F /* SignUpViewController.swift */; };
@@ -104,6 +105,7 @@
 		7810D37C28AD9D2300A1EE65 /* daum_th_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = daum_th_line.png; sourceTree = "<group>"; };
 		7810D37D28AD9D2300A1EE65 /* map_pin_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map_pin_shadow.png; sourceTree = "<group>"; };
 		7810D37E28AD9D2300A1EE65 /* DaumMap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DaumMap.framework; sourceTree = "<group>"; };
+		781E69C428BAC51B00699791 /* PreviousSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousSearchTableViewCell.swift; sourceTree = "<group>"; };
 		783150BF289ADE68008EA60F /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		783150C3289ADE69008EA60F /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		783150E328AD2CD4008EA60F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -278,6 +280,7 @@
 				7886AC4528AD6F8000E12025 /* KakaoMapViewController.swift */,
 				78B459D828AD4AF900721283 /* RoundButton.swift */,
 				78E658B2289AB0D8000DA815 /* Main.storyboard */,
+				781E69C428BAC51B00699791 /* PreviousSearchTableViewCell.swift */,
 				78F5B09128AEC34600230F58 /* MyPageViewController.swift */,
 				78F5B08F28AEC2A800230F58 /* RankingViewController.swift */,
 				78E658B5289AB0D9000DA815 /* Assets.xcassets */,
@@ -450,6 +453,7 @@
 				78F5B08E28AEBFFA00230F58 /* SearchViewController.swift in Sources */,
 				7886AC4628AD6F8000E12025 /* KakaoMapViewController.swift in Sources */,
 				78F5B09028AEC2A800230F58 /* RankingViewController.swift in Sources */,
+				781E69C528BAC51B00699791 /* PreviousSearchTableViewCell.swift in Sources */,
 				78F5B09228AEC34600230F58 /* MyPageViewController.swift in Sources */,
 				78B459D928AD4AF900721283 /* RoundButton.swift in Sources */,
 				78E658AD289AB0D8000DA815 /* AppDelegate.swift in Sources */,
