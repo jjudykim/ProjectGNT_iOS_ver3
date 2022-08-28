@@ -40,6 +40,7 @@
 		783150CA289ADE69008EA60F /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 783150C3289ADE69008EA60F /* Pretendard-Regular.otf */; };
 		783150E428AD2CD4008EA60F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783150E328AD2CD4008EA60F /* SignUpViewController.swift */; };
 		783150E628AD2E63008EA60F /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 783150E528AD2E63008EA60F /* Pretendard-Light.otf */; };
+		783F47CF28BADA9E00102A89 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F47CE28BADA9E00102A89 /* SearchResultViewController.swift */; };
 		7886AC3828AD6C7100E12025 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7886AC3728AD6C7100E12025 /* OpenGLES.framework */; };
 		7886AC3A28AD6C9000E12025 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7886AC3928AD6C9000E12025 /* SystemConfiguration.framework */; };
 		7886AC3C28AD6C9F00E12025 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7886AC3B28AD6C9F00E12025 /* CoreLocation.framework */; };
@@ -110,6 +111,7 @@
 		783150C3289ADE69008EA60F /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		783150E328AD2CD4008EA60F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		783150E528AD2E63008EA60F /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Light.otf"; path = "../../../../Downloads/Pretendard-1.3.3/public/static/Pretendard-Light.otf"; sourceTree = "<group>"; };
+		783F47CE28BADA9E00102A89 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		7886AC3728AD6C7100E12025 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		7886AC3928AD6C9000E12025 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7886AC3B28AD6C9F00E12025 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -277,6 +279,7 @@
 				783150E328AD2CD4008EA60F /* SignUpViewController.swift */,
 				78CC00A128AE8E6F00FB865F /* MainViewController.swift */,
 				78F5B08D28AEBFFA00230F58 /* SearchViewController.swift */,
+				783F47CE28BADA9E00102A89 /* SearchResultViewController.swift */,
 				7886AC4528AD6F8000E12025 /* KakaoMapViewController.swift */,
 				78B459D828AD4AF900721283 /* RoundButton.swift */,
 				78E658B2289AB0D8000DA815 /* Main.storyboard */,
@@ -458,6 +461,7 @@
 				78B459D928AD4AF900721283 /* RoundButton.swift in Sources */,
 				78E658AD289AB0D8000DA815 /* AppDelegate.swift in Sources */,
 				783150E428AD2CD4008EA60F /* SignUpViewController.swift in Sources */,
+				783F47CF28BADA9E00102A89 /* SearchResultViewController.swift in Sources */,
 				78E658AF289AB0D8000DA815 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

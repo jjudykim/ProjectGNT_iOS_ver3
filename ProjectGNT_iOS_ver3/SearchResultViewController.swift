@@ -1,57 +1,61 @@
 //
-//  MainViewController.swift
+//  SearchResultViewController.swift
 //  ProjectGNT_iOS_ver3
 //
-//  Created by jjudy on 2022/08/19.
+//  Created by jjudy on 2022/08/28.
 //
 
 import UIKit
 import LGSegmentedControl
 
-class MainViewController: UIViewController, UIScrollViewDelegate {
-    @IBOutlet var select_SC: LGSegmentedControl!
-    @IBOutlet var rankInfo_SV: UIScrollView!
-    @IBOutlet var rankInfo_PC: UIPageControl!
+class SearchResultViewController: UIViewController, UIScrollViewDelegate{
     
-    var isControlBySegment = false
+    @IBOutlet var rankTier_SC: LGSegmentedControl!
+    @IBOutlet var ranking_SC: LGSegmentedControl!
+    @IBOutlet var ranking_SV: UIScrollView!
+    
+    var isControlBySegment_ranking = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        select_SC.Font = UIFont(name: "GmarketSansTTFMedium", size: 15) ?? UIFont.systemFont(ofSize: 15)
-        rankInfo_SV.delegate = self
+        // Do any additional setup after loading the view.
+        
+        rankTier_SC.Font = UIFont(name: "GmarketSansTTFMedium", size: 15) ?? UIFont.systemFont(ofSize: 15)
+        ranking_SC.Font = UIFont(name: "GmarketSansTTFMedium", size: 15) ?? UIFont.systemFont(ofSize: 15)
+        ranking_SV.delegate = self
         addContentScrollView()
-        setPageControl()
     }
     
     @IBAction func selectSegmentedControl(_ sender: LGSegmentedControl) {
-        guard let segment = select_SC.selectedSegment else { return }
-        let selected = segment.title
-        var index: Int
-        switch selected {
-        case "그님티":
-            index = 0
-        case "지역":
-            index = 1
-        case "소속":
-            index = 2
-        default:
-            index = -1
-        }
-        isControlBySegment = true
-        rankInfo_SV.setContentOffset(CGPoint(x: rankInfo_SV.frame.width * CGFloat(index), y: 0), animated: true)
-        setPageControlSelectedPage(currentPage: index)
+        if let segment = rankTier_SC.selectedSegment {
+            
+        } else if let segment = ranking_SC.selectedSegment {
+            let selected = segment.title
+            var index: Int
+            switch selected {
+            case "그님티":
+                index = 0
+            case "지역":
+                index = 1
+            case "소속":
+                index = 2
+            default:
+                index = -1
+            }
+            isControlBySegment_ranking = true
+            ranking_SV.setContentOffset(CGPoint(x: ranking_SV.frame.width * CGFloat(index), y: 0), animated: true)
+        } else { return }
+        
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let value = (scrollView.contentOffset.x)/scrollView.frame.size.width
-        setPageControlSelectedPage(currentPage: Int(round(value)))
         
         // segment로 선택한 것이 아닐 때만 스크롤에 따라서 segmentController의 현재 선택이 변경되도록 설정
-        if !isControlBySegment {
-            select_SC.selectedIndex = Int(round(value))
+        if !isControlBySegment_ranking {
+            ranking_SC.selectedIndex = Int(round(value))
         } else if round(value) == value {
-            isControlBySegment = false
+            isControlBySegment_ranking = false
         }
     }
     
@@ -61,11 +65,12 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
             let view = UIView()
             let imageSizeWidth = UIImage(named: "rankInfo_main")!.size.width
             let imageSizeHeight = UIImage(named: "rankInfo_main")!.size.height
-            let marginOfSV = (self.view.frame.width - rankInfo_SV.frame.width) / 2
-            let xPos = rankInfo_SV.frame.width * CGFloat(i) + (rankInfo_SV.frame.width / 2) - (imageSizeWidth / 2) - marginOfSV
+            let marginOfSV = (self.view.frame.width - ranking_SV.frame.width) / 2
+            let xPos = ranking_SV.frame.width * CGFloat(i) + (ranking_SV.frame.width / 2) - (imageSizeWidth / 2) - marginOfSV
             
             view.frame = CGRect(x: xPos, y: 0, width: imageSizeWidth, height: imageSizeHeight)
-            view.backgroundColor = UIColor(patternImage: UIImage(named: "rankInfo_main")!)
+            //view.backgroundColor = UIColor(patternImage: UIImage(named: "rankInfo_main")!)
+            view.backgroundColor = UIColor.white
             
             // imageView에 label 추가 및 설정
             view.addSubview(setLabelForAddImage(view.frame, "소환사명 님은", UIFont(name: "GmarketSansTTFBold", size: 30)!, 0))
@@ -77,19 +82,10 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
                 view.addSubview(setLabelForAddImage(view.frame, "소속의", UIFont(name: "GmarketSansTTFMedium", size: 20)!, 1))
             }
             
-            rankInfo_SV.addSubview(view)
-            rankInfo_SV.contentSize.width = rankInfo_SV.frame.width * CGFloat(i + 1)
+            ranking_SV.addSubview(view)
+            ranking_SV.contentSize.width = ranking_SV.frame.width * CGFloat(i + 1)
             
         }
-    }
-    
-    private func setPageControl() {
-        rankInfo_PC.numberOfPages = 3
-    }
-    
-    private func setPageControlSelectedPage(currentPage:Int) {
-        rankInfo_PC.currentPage = currentPage
-        //print("현재 페이지 : \(currentPage)")
     }
     
     private func setLabelForAddImage(_ frame: CGRect, _ text: String, _ font: UIFont, _ line: Int) -> UILabel {
@@ -109,6 +105,5 @@ class MainViewController: UIViewController, UIScrollViewDelegate {
         //print("\(frame.midX), \(100 * CGFloat(line))에 성공적으로 label 세팅!")
         return label
     }
+
 }
-
-
