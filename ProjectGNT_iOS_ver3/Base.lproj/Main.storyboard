@@ -606,43 +606,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MainIcon" translatesAutoresizingMaskIntoConstraints="NO" id="pdC-kR-Rmw">
-                                <rect key="frame" x="168" y="88" width="79" height="102"/>
+                                <rect key="frame" x="177" y="88" width="60" height="102"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileImage_sample" translatesAutoresizingMaskIntoConstraints="NO" id="jzU-72-EAx">
-                                <rect key="frame" x="53" y="217" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="소환사명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaX-QJ-22C">
-                                <rect key="frame" x="157" y="229" width="70" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GmarketSansTTFMedium" family="Gmarket Sans TTF" pointSize="18"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LV.nnn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqA-So-hBl">
-                                <rect key="frame" x="157" y="270" width="48" height="15"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GmarketSansTTFLight" family="Gmarket Sans TTF" pointSize="14"/>
-                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sRq-h2-pRg">
-                                <rect key="frame" x="10" y="537" width="394" height="312"/>
+                                <rect key="frame" x="20" y="498" width="374" height="312"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="searchResult_ranking" translatesAutoresizingMaskIntoConstraints="NO" id="86W-v9-Ogn">
-                                        <rect key="frame" x="-1" y="-4" width="394" height="321"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="312"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <scrollView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifU-so-sXW">
-                                        <rect key="frame" x="30" y="74" width="333" height="213"/>
+                                        <rect key="frame" x="30" y="74" width="316" height="206"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <viewLayoutGuide key="contentLayoutGuide" id="1qk-kP-2qa"/>
                                         <viewLayoutGuide key="frameLayoutGuide" id="qa4-pH-aFX"/>
                                     </scrollView>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y6h-wq-Ka3" customClass="LGSegmentedControl" customModule="LGSegmentedControl">
-                                        <rect key="frame" x="30" y="25" width="333" height="41"/>
+                                        <rect key="frame" x="29" y="25" width="316" height="41"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <userDefinedRuntimeAttributes>
@@ -671,88 +653,124 @@
                                                 <integer key="value" value="0"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="selectSegmentedControl:" destination="KKs-nN-Xjh" eventType="valueChanged" id="tDo-CB-aJa"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="searchResult_rankTier" translatesAutoresizingMaskIntoConstraints="NO" id="IjU-zu-Bhh">
-                                <rect key="frame" x="10" y="333" width="394" height="202"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MDd-ZF-9n0" userLabel="profileView">
+                                <rect key="frame" x="20" y="198" width="374" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gL6-HG-GdN" customClass="LGSegmentedControl" customModule="LGSegmentedControl">
-                                <rect key="frame" x="53" y="366" width="308" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="initialSelectedIndex">
-                                        <integer key="value" value="0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="segmentTitles" value="솔로랭킹, 자유랭킹"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="stackViewDistribution" value="fillEqually"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="spacing">
-                                        <real key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animateStateChange" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
-                                        <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="deselectedBackgroundColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="deselectedTextColor">
-                                        <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="segmentsCornerRadius">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rankTierImage_sample" translatesAutoresizingMaskIntoConstraints="NO" id="bEp-Ug-eeC">
-                                <rect key="frame" x="53" y="425" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="랭크" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3I-X8-chn">
-                                <rect key="frame" x="151" y="436" width="35" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="GmarketSansTTFMedium" family="Gmarket Sans TTF" pointSize="18"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cYw-2n-Szm">
-                                <rect key="frame" x="151" y="483" width="218.5" height="14.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nnnLP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEH-ru-MUd">
-                                        <rect key="frame" x="0.0" y="0.0" width="47" height="14.5"/>
-                                        <fontDescription key="fontDescription" name="GmarketSansTTFLight" family="Gmarket Sans TTF" pointSize="14"/>
-                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="searchResult_profile" translatesAutoresizingMaskIntoConstraints="NO" id="gdC-qJ-9XF">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profileImage_sample" translatesAutoresizingMaskIntoConstraints="NO" id="jzU-72-EAx">
+                                        <rect key="frame" x="28" y="22" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="소환사명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AaX-QJ-22C">
+                                        <rect key="frame" x="124" y="34" width="69.5" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GmarketSansTTFMedium" family="Gmarket Sans TTF" pointSize="18"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nn승 nn패" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeY-ho-l9Z">
-                                        <rect key="frame" x="67" y="0.0" width="68" height="14.5"/>
-                                        <fontDescription key="fontDescription" name="GmarketSansTTFLight" family="Gmarket Sans TTF" pointSize="14"/>
-                                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="승률 nn%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aq5-ac-zAF">
-                                        <rect key="frame" x="155" y="0.0" width="63.5" height="14.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LV.nnn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqA-So-hBl">
+                                        <rect key="frame" x="124" y="75" width="48" height="14.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="GmarketSansTTFLight" family="Gmarket Sans TTF" pointSize="14"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                            </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="searchResult_profile" translatesAutoresizingMaskIntoConstraints="NO" id="gdC-qJ-9XF">
-                                <rect key="frame" x="20" y="194" width="375" height="132"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eyd-BO-5X1" userLabel="rankTierView">
+                                <rect key="frame" x="20" y="316" width="374" height="191"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="searchResult_rankTier" translatesAutoresizingMaskIntoConstraints="NO" id="IjU-zu-Bhh">
+                                        <rect key="frame" x="0.0" y="-5" width="374" height="202"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="랭크" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3I-X8-chn">
+                                        <rect key="frame" x="128" y="94" width="35" height="18"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="GmarketSansTTFMedium" family="Gmarket Sans TTF" pointSize="18"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cYw-2n-Szm">
+                                        <rect key="frame" x="128" y="137" width="218.5" height="14.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nnnLP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEH-ru-MUd">
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="14.5"/>
+                                                <fontDescription key="fontDescription" name="GmarketSansTTFLight" family="Gmarket Sans TTF" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nn승 nn패" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeY-ho-l9Z">
+                                                <rect key="frame" x="67" y="0.0" width="68" height="14.5"/>
+                                                <fontDescription key="fontDescription" name="GmarketSansTTFLight" family="Gmarket Sans TTF" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="승률 nn%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aq5-ac-zAF">
+                                                <rect key="frame" x="155" y="0.0" width="63.5" height="14.5"/>
+                                                <fontDescription key="fontDescription" name="GmarketSansTTFLight" family="Gmarket Sans TTF" pointSize="14"/>
+                                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gL6-HG-GdN" customClass="LGSegmentedControl" customModule="LGSegmentedControl">
+                                        <rect key="frame" x="33" y="31" width="308" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="initialSelectedIndex">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="segmentTitles" value="솔로랭킹, 자유랭킹"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="stackViewDistribution" value="fillEqually"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animateStateChange" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                                <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="deselectedBackgroundColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="deselectedTextColor">
+                                                <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="segmentsCornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rankTierImage_sample" translatesAutoresizingMaskIntoConstraints="NO" id="bEp-Ug-eeC">
+                                        <rect key="frame" x="28" y="81" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fTO-PS-4UA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Zu0-c6-vAo"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="rankTier_SC" destination="gL6-HG-GdN" id="sS8-zL-Ciw"/>
                         <outlet property="ranking_SC" destination="y6h-wq-Ka3" id="WMo-PL-lnM"/>
@@ -761,7 +779,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M4O-Gq-zGi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2969.5652173913045" y="2289.5089285714284"/>
+            <point key="canvasLocation" x="2969.5652173913045" y="2298.8839285714284"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="LZL-OD-gRw">
+            <objects>
+                <viewController id="zN4-s5-ZWF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mV6-dg-Ulw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="XSw-3K-6JJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N6v-m0-VL6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3699" y="2299"/>
         </scene>
         <!--RankingVC-->
         <scene sceneID="Hdp-hN-Kf4">
@@ -770,14 +803,235 @@
                     <view key="view" contentMode="scaleToFill" id="X79-c2-HZU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DUZ-gr-HdW">
+                                <rect key="frame" x="0.0" y="302" width="414" height="594"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ranking_background" translatesAutoresizingMaskIntoConstraints="NO" id="rg5-jg-I8b">
+                                        <rect key="frame" x="-16" y="-20" width="446" height="686"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="446" id="gsW-px-jcN"/>
+                                            <constraint firstAttribute="height" constant="686" id="k9U-Fd-cRl"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022.09.01 00:00 기준" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2DX-WV-607">
+                                        <rect key="frame" x="30" y="72" width="234" height="12"/>
+                                        <fontDescription key="fontDescription" name="GmarketSansTTFLight" family="Gmarket Sans TTF" pointSize="12"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="T6x-bv-5DC">
+                                        <rect key="frame" x="15" y="94" width="384" height="418"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="RankingUserCell" rowHeight="138" id="28y-c4-0Fx" customClass="RankingUserTableViewCell" customModule="ProjectGNT_iOS_ver3" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="44.5" width="384" height="138"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="28y-c4-0Fx" id="DSg-gb-AGT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="384" height="138"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rankingUser_background" translatesAutoresizingMaskIntoConstraints="NO" id="G6C-TZ-NZT">
+                                                            <rect key="frame" x="0.0" y="4" width="384" height="130"/>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rankTierImage_sample" translatesAutoresizingMaskIntoConstraints="NO" id="Pxw-go-f12">
+                                                            <rect key="frame" x="37" y="28" width="80" height="75"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="80" id="5OY-ec-zOt"/>
+                                                                <constraint firstAttribute="height" constant="75" id="gZm-PD-2io"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="소환사명" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aca-o7-Vzd">
+                                                            <rect key="frame" x="128" y="28" width="79" height="20"/>
+                                                            <fontDescription key="fontDescription" name="GmarketSansTTFMedium" family="Gmarket Sans TTF" pointSize="18"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4ME-Cx-qxI">
+                                                            <rect key="frame" x="128" y="88" width="189.5" height="14.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nnLP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8b-cR-E1G">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="38" height="14.5"/>
+                                                                    <fontDescription key="fontDescription" name="GmarketSansTTFLight" family="Gmarket Sans TTF" pointSize="14"/>
+                                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nn승 nn패" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kcq-A8-6qm">
+                                                                    <rect key="frame" x="48" y="0.0" width="68" height="14.5"/>
+                                                                    <fontDescription key="fontDescription" name="GmarketSansTTFLight" family="Gmarket Sans TTF" pointSize="14"/>
+                                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="승률 nn%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLK-i5-Aw0">
+                                                                    <rect key="frame" x="126" y="0.0" width="63.5" height="14.5"/>
+                                                                    <fontDescription key="fontDescription" name="GmarketSansTTFLight" family="Gmarket Sans TTF" pointSize="14"/>
+                                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="랭크" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T3u-kd-ohC">
+                                                            <rect key="frame" x="128" y="61" width="28" height="15"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="15" id="F1W-VX-u3e"/>
+                                                                <constraint firstAttribute="width" constant="28" id="bKH-71-uTl"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="GmarketSansTTFLight" family="Gmarket Sans TTF" pointSize="14"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="G6C-TZ-NZT" firstAttribute="centerY" secondItem="Pxw-go-f12" secondAttribute="centerY" constant="3.5" id="77i-pI-cY2"/>
+                                                        <constraint firstItem="G6C-TZ-NZT" firstAttribute="leading" secondItem="DSg-gb-AGT" secondAttribute="leadingMargin" constant="-20" id="9JU-tT-wvF"/>
+                                                        <constraint firstItem="4ME-Cx-qxI" firstAttribute="top" secondItem="T3u-kd-ohC" secondAttribute="bottom" constant="12" id="FEh-d6-yyw"/>
+                                                        <constraint firstItem="T3u-kd-ohC" firstAttribute="leading" secondItem="Aca-o7-Vzd" secondAttribute="leading" id="R6v-27-MCB"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="Pxw-go-f12" secondAttribute="bottom" constant="24" id="T9L-Jk-4Pe"/>
+                                                        <constraint firstItem="Pxw-go-f12" firstAttribute="leading" secondItem="DSg-gb-AGT" secondAttribute="leadingMargin" constant="17" id="TIS-kS-075"/>
+                                                        <constraint firstItem="T3u-kd-ohC" firstAttribute="top" secondItem="Aca-o7-Vzd" secondAttribute="bottom" constant="13" id="Ve9-yC-542"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="G6C-TZ-NZT" secondAttribute="trailing" constant="-20" id="aGz-f2-5nD"/>
+                                                        <constraint firstItem="Pxw-go-f12" firstAttribute="top" secondItem="DSg-gb-AGT" secondAttribute="topMargin" constant="17" id="bo7-DB-T8S"/>
+                                                        <constraint firstItem="T3u-kd-ohC" firstAttribute="centerY" secondItem="Pxw-go-f12" secondAttribute="centerY" constant="3" id="c5J-fL-5pE"/>
+                                                        <constraint firstItem="T3u-kd-ohC" firstAttribute="leading" secondItem="4ME-Cx-qxI" secondAttribute="leading" id="g72-z1-G1E"/>
+                                                        <constraint firstItem="4ME-Cx-qxI" firstAttribute="leading" secondItem="Pxw-go-f12" secondAttribute="trailing" constant="11" id="hRr-Vb-JHg"/>
+                                                        <constraint firstItem="G6C-TZ-NZT" firstAttribute="top" secondItem="DSg-gb-AGT" secondAttribute="topMargin" constant="-7" id="jGf-SF-2gn"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <connections>
+                                                    <outlet property="cellView" destination="DSg-gb-AGT" id="HpD-y7-9ot"/>
+                                                    <outlet property="userName_Label" destination="Aca-o7-Vzd" id="Egz-xL-2Gw"/>
+                                                    <outlet property="userRankPoint_Label" destination="S8b-cR-E1G" id="xu7-aZ-AFb"/>
+                                                    <outlet property="userRank_IV" destination="Pxw-go-f12" id="99q-KM-p3V"/>
+                                                    <outlet property="userRank_Label" destination="T3u-kd-ohC" id="4tO-Ql-ifI"/>
+                                                    <outlet property="userWinRate_Label" destination="VLK-i5-Aw0" id="fSh-z2-G3s"/>
+                                                    <outlet property="userWorL_Label" destination="kcq-A8-6qm" id="YRb-Qf-ieQ"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2DX-WV-607" secondAttribute="trailing" constant="150" id="0bi-Vy-pvy"/>
+                                    <constraint firstAttribute="bottom" secondItem="T6x-bv-5DC" secondAttribute="bottom" constant="82" id="Lpr-vu-LCc"/>
+                                    <constraint firstItem="rg5-jg-I8b" firstAttribute="top" secondItem="DUZ-gr-HdW" secondAttribute="top" constant="-20" id="NZ0-vb-R5h"/>
+                                    <constraint firstItem="2DX-WV-607" firstAttribute="top" secondItem="DUZ-gr-HdW" secondAttribute="top" constant="72" id="Oq6-92-fSJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="rg5-jg-I8b" secondAttribute="trailing" constant="-16" id="QQy-XE-qmg"/>
+                                    <constraint firstItem="T6x-bv-5DC" firstAttribute="leading" secondItem="DUZ-gr-HdW" secondAttribute="leading" constant="15" id="Xqm-LD-7kd"/>
+                                    <constraint firstItem="T6x-bv-5DC" firstAttribute="top" secondItem="2DX-WV-607" secondAttribute="bottom" constant="10" id="d7W-TT-BAI"/>
+                                    <constraint firstAttribute="trailing" secondItem="T6x-bv-5DC" secondAttribute="trailing" constant="15" id="f0o-5T-Pez"/>
+                                    <constraint firstItem="2DX-WV-607" firstAttribute="leading" secondItem="DUZ-gr-HdW" secondAttribute="leading" constant="30" id="gqY-pC-uJh"/>
+                                    <constraint firstItem="rg5-jg-I8b" firstAttribute="leading" secondItem="DUZ-gr-HdW" secondAttribute="leading" constant="-16" id="ljo-py-MB7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h3W-5g-hB9">
+                                <rect key="frame" x="20" y="182" width="374" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rankingSegment_background" translatesAutoresizingMaskIntoConstraints="NO" id="fBf-cf-mVT">
+                                        <rect key="frame" x="-3" y="-9" width="380" height="175"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0DT-Ip-ahu" customClass="LGSegmentedControl" customModule="LGSegmentedControl">
+                                        <rect key="frame" x="37" y="84" width="300" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="initialSelectedIndex">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="segmentTitles" value="그님티, 지역, 소속"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="stackViewDistribution" value="fillEqually"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="segmentsCornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animateStateChange" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                                <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="deselectedBackgroundColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="deselectedTextColor">
+                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXZ-7g-TZQ" customClass="LGSegmentedControl" customModule="LGSegmentedControl">
+                                        <rect key="frame" x="37" y="26" width="300" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="initialSelectedIndex">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="segmentTitles" value="솔로랭킹, 자유랭킹"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="stackViewDistribution" value="fillEqually"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="segmentsCornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="animateStateChange" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedBackgroundColor">
+                                                <color key="value" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="deselectedBackgroundColor">
+                                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="deselectedTextColor">
+                                                <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NIn-gq-ahb">
+                                <rect key="frame" x="87" y="58" width="240" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MainText" translatesAutoresizingMaskIntoConstraints="NO" id="laX-y8-KLY">
+                                        <rect key="frame" x="121" y="0.0" width="98" height="116"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MainIcon" translatesAutoresizingMaskIntoConstraints="NO" id="TLK-g5-5lj">
+                                        <rect key="frame" x="36" y="10" width="71" height="97"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tvb-ov-WbL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DUZ-gr-HdW" firstAttribute="trailing" secondItem="tvb-ov-WbL" secondAttribute="trailing" id="Nl6-Rc-PcT"/>
+                            <constraint firstItem="DUZ-gr-HdW" firstAttribute="top" secondItem="tvb-ov-WbL" secondAttribute="top" constant="214" id="PLe-tW-isz"/>
+                            <constraint firstAttribute="bottom" secondItem="DUZ-gr-HdW" secondAttribute="bottom" id="dds-IR-KDG"/>
+                            <constraint firstItem="DUZ-gr-HdW" firstAttribute="leading" secondItem="tvb-ov-WbL" secondAttribute="leading" id="z6Z-kS-D8O"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="2" title="랭킹" image="tabBarIcon_rank" id="dAM-mu-IVm"/>
+                    <connections>
+                        <outlet property="rankingUser_TV" destination="T6x-bv-5DC" id="WcI-lQ-Fth"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kTR-4V-4vh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3699" y="1603"/>
+            <point key="canvasLocation" x="3698.5507246376815" y="1602.4553571428571"/>
         </scene>
         <!--MyPageVC-->
         <scene sceneID="rcD-Lv-iZc">
@@ -841,6 +1095,9 @@
         <image name="deleteBtn" width="276" height="276"/>
         <image name="profileImage_sample" width="1100" height="1100"/>
         <image name="rankTierImage_sample" width="1100" height="1100"/>
+        <image name="rankingSegment_background" width="5524" height="2416"/>
+        <image name="rankingUser_background" width="5372" height="2040"/>
+        <image name="ranking_background" width="6200" height="8352"/>
         <image name="searchBar" width="5272" height="1020"/>
         <image name="searchIcon" width="318" height="298"/>
         <image name="searchResult_profile" width="5372" height="1792"/>

@@ -27,9 +27,7 @@ class SearchResultViewController: UIViewController, UIScrollViewDelegate{
     }
     
     @IBAction func selectSegmentedControl(_ sender: LGSegmentedControl) {
-        if let segment = rankTier_SC.selectedSegment {
-            
-        } else if let segment = ranking_SC.selectedSegment {
+       if let segment = ranking_SC.selectedSegment {
             let selected = segment.title
             var index: Int
             switch selected {
