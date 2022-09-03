@@ -16,9 +16,14 @@ class MyPageOptionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        optionList_TV.delegate = self
         optionList_TV.dataSource = self
         optionList_TV.rowHeight = 70
     }
+}
+
+extension MyPageOptionViewController : UITableViewDelegate {
+    
 }
 
 extension MyPageOptionViewController : UITableViewDataSource {
