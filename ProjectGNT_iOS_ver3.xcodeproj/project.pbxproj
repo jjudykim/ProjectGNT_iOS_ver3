@@ -43,6 +43,7 @@
 		783F47CF28BADA9E00102A89 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F47CE28BADA9E00102A89 /* SearchResultViewController.swift */; };
 		7854239228BBFCC60095D8A8 /* RankingUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7854239128BBFCC60095D8A8 /* RankingUserTableViewCell.swift */; };
 		7854239528BC16490095D8A8 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7854239428BC16490095D8A8 /* PushKit.framework */; };
+		7854239728C2E2CA0095D8A8 /* MyPageOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7854239628C2E2CA0095D8A8 /* MyPageOptionViewController.swift */; };
 		7886AC3828AD6C7100E12025 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7886AC3728AD6C7100E12025 /* OpenGLES.framework */; };
 		7886AC3A28AD6C9000E12025 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7886AC3928AD6C9000E12025 /* SystemConfiguration.framework */; };
 		7886AC3C28AD6C9F00E12025 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7886AC3B28AD6C9F00E12025 /* CoreLocation.framework */; };
@@ -117,6 +118,7 @@
 		7854239128BBFCC60095D8A8 /* RankingUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingUserTableViewCell.swift; sourceTree = "<group>"; };
 		7854239328BC162B0095D8A8 /* ProjectGNT_iOS_ver3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProjectGNT_iOS_ver3.entitlements; sourceTree = "<group>"; };
 		7854239428BC16490095D8A8 /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
+		7854239628C2E2CA0095D8A8 /* MyPageOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageOptionViewController.swift; sourceTree = "<group>"; };
 		7886AC3728AD6C7100E12025 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		7886AC3928AD6C9000E12025 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7886AC3B28AD6C9F00E12025 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -294,6 +296,7 @@
 				781E69C428BAC51B00699791 /* PreviousSearchTableViewCell.swift */,
 				7854239128BBFCC60095D8A8 /* RankingUserTableViewCell.swift */,
 				78F5B09128AEC34600230F58 /* MyPageViewController.swift */,
+				7854239628C2E2CA0095D8A8 /* MyPageOptionViewController.swift */,
 				78F5B08F28AEC2A800230F58 /* RankingViewController.swift */,
 				78E658B5289AB0D9000DA815 /* Assets.xcassets */,
 				78E658B7289AB0D9000DA815 /* LaunchScreen.storyboard */,
@@ -472,6 +475,7 @@
 				783150E428AD2CD4008EA60F /* SignUpViewController.swift in Sources */,
 				7854239228BBFCC60095D8A8 /* RankingUserTableViewCell.swift in Sources */,
 				783F47CF28BADA9E00102A89 /* SearchResultViewController.swift in Sources */,
+				7854239728C2E2CA0095D8A8 /* MyPageOptionViewController.swift in Sources */,
 				78E658AF289AB0D8000DA815 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
