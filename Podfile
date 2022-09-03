@@ -20,5 +20,7 @@ pod 'DropDown'
 pod 'KakaoSDKAuth'
 pod 'KakaoSDKUser'
 pod 'LGSegmentedControl'
+pod 'Firebase/Core'
+pod 'Firebase/Messaging'
 
 end

@@ -42,6 +42,7 @@
 		783150E628AD2E63008EA60F /* Pretendard-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 783150E528AD2E63008EA60F /* Pretendard-Light.otf */; };
 		783F47CF28BADA9E00102A89 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F47CE28BADA9E00102A89 /* SearchResultViewController.swift */; };
 		7854239228BBFCC60095D8A8 /* RankingUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7854239128BBFCC60095D8A8 /* RankingUserTableViewCell.swift */; };
+		7854239528BC16490095D8A8 /* PushKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7854239428BC16490095D8A8 /* PushKit.framework */; };
 		7886AC3828AD6C7100E12025 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7886AC3728AD6C7100E12025 /* OpenGLES.framework */; };
 		7886AC3A28AD6C9000E12025 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7886AC3928AD6C9000E12025 /* SystemConfiguration.framework */; };
 		7886AC3C28AD6C9F00E12025 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7886AC3B28AD6C9F00E12025 /* CoreLocation.framework */; };
@@ -114,6 +115,8 @@
 		783150E528AD2E63008EA60F /* Pretendard-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Light.otf"; path = "../../../../Downloads/Pretendard-1.3.3/public/static/Pretendard-Light.otf"; sourceTree = "<group>"; };
 		783F47CE28BADA9E00102A89 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		7854239128BBFCC60095D8A8 /* RankingUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingUserTableViewCell.swift; sourceTree = "<group>"; };
+		7854239328BC162B0095D8A8 /* ProjectGNT_iOS_ver3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProjectGNT_iOS_ver3.entitlements; sourceTree = "<group>"; };
+		7854239428BC16490095D8A8 /* PushKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PushKit.framework; path = System/Library/Frameworks/PushKit.framework; sourceTree = SDKROOT; };
 		7886AC3728AD6C7100E12025 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		7886AC3928AD6C9000E12025 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7886AC3B28AD6C9F00E12025 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -153,6 +156,7 @@
 				7886AC4228AD6D3F00E12025 /* QuartzCore.framework in Frameworks */,
 				7886AC3C28AD6C9F00E12025 /* CoreLocation.framework in Frameworks */,
 				7886AC4428AD6D5100E12025 /* libxml2.tbd in Frameworks */,
+				7854239528BC16490095D8A8 /* PushKit.framework in Frameworks */,
 				7886AC3A28AD6C9000E12025 /* SystemConfiguration.framework in Frameworks */,
 				7886AC3828AD6C7100E12025 /* OpenGLES.framework in Frameworks */,
 				7810D39A28AD9D2300A1EE65 /* DaumMap.framework in Frameworks */,
@@ -225,6 +229,7 @@
 		7886AC3628AD6C7100E12025 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7854239428BC16490095D8A8 /* PushKit.framework */,
 				7886AC4128AD6D3F00E12025 /* QuartzCore.framework */,
 				7886AC3F28AD6CBF00E12025 /* libsqlite3.tbd */,
 				7886AC3E28AD6CB400E12025 /* libxml2.tbd */,
@@ -271,6 +276,7 @@
 		78E658AB289AB0D8000DA815 /* ProjectGNT_iOS_ver3 */ = {
 			isa = PBXGroup;
 			children = (
+				7854239328BC162B0095D8A8 /* ProjectGNT_iOS_ver3.entitlements */,
 				7810D35828AD9D2200A1EE65 /* DaumMap.embeddedframework */,
 				78BF6E59289AB9F600D41D5F /* Font */,
 				7886AC4728AD71AF00E12025 /* KakaoMap-Bridging-Header.h */,
@@ -612,6 +618,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProjectGNT_iOS_ver3/ProjectGNT_iOS_ver3.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				EXCLUDED_ARCHS = arm64;
@@ -651,6 +658,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ProjectGNT_iOS_ver3/ProjectGNT_iOS_ver3.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				EXCLUDED_ARCHS = arm64;
