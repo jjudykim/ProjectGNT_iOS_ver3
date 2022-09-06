@@ -1,6 +1,8 @@
 PODS:
   - Alamofire (5.6.2)
   - DropDown (2.3.13)
+  - Firebase/Analytics (9.5.0):
+    - Firebase/Core
   - Firebase/Core (9.5.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (~> 9.5.0)
@@ -117,6 +119,7 @@ PODS:
 
 DEPENDENCIES:
   - DropDown
+  - Firebase/Analytics
   - Firebase/Core
   - Firebase/Messaging
   - KakaoSDKAuth
@@ -164,6 +167,6 @@ SPEC CHECKSUMS:
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
 
-PODFILE CHECKSUM: c001929f54dd23975761ce47f0775dd314f2e693
+PODFILE CHECKSUM: 27d1c83450fbf7823b60af7ed8d0bfb18e246ca6
 
 COCOAPODS: 1.11.3

@@ -53,9 +53,11 @@
 		7886AC4428AD6D5100E12025 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7886AC3E28AD6CB400E12025 /* libxml2.tbd */; };
 		7886AC4628AD6F8000E12025 /* KakaoMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7886AC4528AD6F8000E12025 /* KakaoMapViewController.swift */; };
 		78B459D928AD4AF900721283 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78B459D828AD4AF900721283 /* RoundButton.swift */; };
+		78B4A74D28C7A0440016B77D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78B4A74C28C7A0430016B77D /* GoogleService-Info.plist */; };
 		78BF6E5D289ABA4200D41D5F /* GmarketSansTTFMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78BF6E5A289ABA4200D41D5F /* GmarketSansTTFMedium.ttf */; };
 		78BF6E5E289ABA4200D41D5F /* GmarketSansTTFLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78BF6E5B289ABA4200D41D5F /* GmarketSansTTFLight.ttf */; };
 		78BF6E5F289ABA4200D41D5F /* GmarketSansTTFBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78BF6E5C289ABA4200D41D5F /* GmarketSansTTFBold.ttf */; };
+		78C8CD2528C77D61006330D3 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C8CD2428C77D61006330D3 /* UserNotifications.framework */; };
 		78CC00A228AE8E6F00FB865F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC00A128AE8E6F00FB865F /* MainViewController.swift */; };
 		78E658AD289AB0D8000DA815 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E658AC289AB0D8000DA815 /* AppDelegate.swift */; };
 		78E658AF289AB0D8000DA815 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E658AE289AB0D8000DA815 /* SceneDelegate.swift */; };
@@ -129,9 +131,11 @@
 		7886AC4528AD6F8000E12025 /* KakaoMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapViewController.swift; sourceTree = "<group>"; };
 		7886AC4728AD71AF00E12025 /* KakaoMap-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KakaoMap-Bridging-Header.h"; sourceTree = "<group>"; };
 		78B459D828AD4AF900721283 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		78B4A74C28C7A0430016B77D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		78BF6E5A289ABA4200D41D5F /* GmarketSansTTFMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFMedium.ttf; sourceTree = "<group>"; };
 		78BF6E5B289ABA4200D41D5F /* GmarketSansTTFLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFLight.ttf; sourceTree = "<group>"; };
 		78BF6E5C289ABA4200D41D5F /* GmarketSansTTFBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GmarketSansTTFBold.ttf; sourceTree = "<group>"; };
+		78C8CD2428C77D61006330D3 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		78CC00A128AE8E6F00FB865F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		78E658A9289AB0D8000DA815 /* ProjectGNT_iOS_ver3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectGNT_iOS_ver3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E658AC289AB0D8000DA815 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78C8CD2528C77D61006330D3 /* UserNotifications.framework in Frameworks */,
 				7886AC4028AD6D2300E12025 /* libsqlite3.tbd in Frameworks */,
 				7886AC4328AD6D4700E12025 /* libc++.tbd in Frameworks */,
 				7886AC4228AD6D3F00E12025 /* QuartzCore.framework in Frameworks */,
@@ -172,8 +177,8 @@
 		7810D35828AD9D2200A1EE65 /* DaumMap.embeddedframework */ = {
 			isa = PBXGroup;
 			children = (
-				7810D35928AD9D2200A1EE65 /* Resources */,
 				7810D37E28AD9D2300A1EE65 /* DaumMap.framework */,
+				7810D35928AD9D2200A1EE65 /* Resources */,
 			);
 			path = DaumMap.embeddedframework;
 			sourceTree = "<group>";
@@ -231,6 +236,7 @@
 		7886AC3628AD6C7100E12025 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				78C8CD2428C77D61006330D3 /* UserNotifications.framework */,
 				7854239428BC16490095D8A8 /* PushKit.framework */,
 				7886AC4128AD6D3F00E12025 /* QuartzCore.framework */,
 				7886AC3F28AD6CBF00E12025 /* libsqlite3.tbd */,
@@ -278,6 +284,7 @@
 		78E658AB289AB0D8000DA815 /* ProjectGNT_iOS_ver3 */ = {
 			isa = PBXGroup;
 			children = (
+				78B4A74C28C7A0430016B77D /* GoogleService-Info.plist */,
 				7854239328BC162B0095D8A8 /* ProjectGNT_iOS_ver3.entitlements */,
 				7810D35828AD9D2200A1EE65 /* DaumMap.embeddedframework */,
 				78BF6E59289AB9F600D41D5F /* Font */,
@@ -380,6 +387,7 @@
 				7810D38F28AD9D2300A1EE65 /* point_sprite.png in Resources */,
 				7810D38C28AD9D2300A1EE65 /* map_present_tracking.png in Resources */,
 				783150CA289ADE69008EA60F /* Pretendard-Regular.otf in Resources */,
+				78B4A74D28C7A0440016B77D /* GoogleService-Info.plist in Resources */,
 				7810D38A28AD9D2300A1EE65 /* daum_copyright.png in Resources */,
 				7810D38428AD9D2300A1EE65 /* map_pin_custom@3x.png in Resources */,
 				78BF6E5E289ABA4200D41D5F /* GmarketSansTTFLight.ttf in Resources */,
@@ -531,7 +539,6 @@
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -623,10 +630,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ProjectGNT_iOS_ver3/ProjectGNT_iOS_ver3.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				EXCLUDED_ARCHS = arm64;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				DEVELOPMENT_TEAM = 89JUWABCJX;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ProjectGNT_iOS_ver3/DaumMap.embeddedframework",
@@ -649,6 +656,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jjudy.ProjectGNT-iOS-ver3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = GNTtest;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/jjudy/Documents/ProjectGNT_iOS_ver3/ProjectGNT_iOS_ver3/KakaoMap-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -665,8 +673,6 @@
 				CODE_SIGN_ENTITLEMENTS = ProjectGNT_iOS_ver3/ProjectGNT_iOS_ver3.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				EXCLUDED_ARCHS = arm64;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/ProjectGNT_iOS_ver3/DaumMap.embeddedframework",
